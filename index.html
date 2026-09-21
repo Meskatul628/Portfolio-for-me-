@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Meskatul Islam | Flutter Developer & Mobile App Engineer</title>
+    <meta name="description" content="Portfolio of Md. Meskatul Islam - Junior Flutter Developer specializing in Dart, Cross-Platform Mobile Apps, REST APIs, Firebase, and State Management.">
+    <meta name="keywords" content="Md Meskatul Islam, Flutter Developer, Mobile App Developer, Dart, Firebase, Android, iOS, Dhaka Bangladesh">
+    <meta name="author" content="Md. Meskatul Islam">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Md. Meskatul Islam - Flutter Developer">
+    <meta property="og:description" content="Results-driven Flutter Developer with experience in cross-platform mobile apps, REST APIs, Firebase, and State Management.">
+    <meta property="og:image" content="assets/PICC (1).jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Animated Shapes -->
+    <div class="bg-blur-wrapper">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-icon"><i class="fa-brands fa-flutter"></i></span>
+                <span class="logo-text">Meskatul<span class="highlight">.dev</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-item"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#projects" class="nav-item"><i class="fa-solid fa-mobile-screen"></i> Projects</a>
+                <a href="#experience" class="nav-item"><i class="fa-solid fa-briefcase"></i> Experience</a>
+                <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon icon-dark"></i>
+                    <i class="fa-solid fa-sun icon-light"></i>
+                </button>
+
+                <a href="#contact" class="btn btn-primary nav-cta">
+                    <span>Hire Me</span> <i class="fa-solid fa-paper-plane"></i>
+                </a>
+
+                <button id="mobile-menu-toggle" class="hamburger" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="pulse-dot"></span>
+                        <span>Available for New Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Md. Meskatul Islam</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Building High-Performance <span class="flutter-text"><i class="fa-brands fa-flutter"></i> Flutter</span> Mobile Applications
+                    </h2>
+
+                    <p class="hero-description">
+                        Results-driven Flutter Developer specializing in building beautiful, cross-platform Android & iOS apps with Dart, clean state management (Bloc & Cubit, Riverpod, Provider, GetX), REST API integration, and Firebase backend services.
+                    </p>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-chip">
+                            <i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh
+                        </div>
+                        <div class="highlight-chip">
+                            <i class="fa-solid fa-layer-group"></i> Cross-Platform iOS & Android
+                        </div>
+                        <div class="highlight-chip">
+                            <i class="fa-solid fa-circle-check"></i> Published Apps on App Stores
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <span>Explore My Apps</span> <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="mailto:meskatul628@gmail.com" class="btn btn-secondary">
+                            <i class="fa-solid fa-envelope"></i> <span>Get In Touch</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="cv-download-btn">
+                            <i class="fa-solid fa-download"></i> <span>Contact Info</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links-bar">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:meskatul628@gmail.com" class="social-link" title="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+8801739707628" class="social-link" title="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-glow-ring"></div>
+                        <div class="profile-image-container">
+                            <img src="assets/PICC (1).jpg" alt="Md. Meskatul Islam" class="profile-img">
+                            <div class="image-overlay"></div>
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="floating-badge badge-flutter">
+                            <div class="badge-icon"><i class="fa-brands fa-flutter"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">Flutter Specialist</span>
+                                <span class="badge-sub">Dart & Clean Architecture</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="floating-badge badge-apps">
+                            <div class="badge-icon"><i class="fa-solid fa-rocket"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">Live Apps</span>
+                                <span class="badge-sub">Play & App Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-mobile-button"></i></div>
+                        <div class="stat-number" data-target="2">2+</div>
+                        <div class="stat-label">Published Mobile Apps</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-code-branch"></i></div>
+                        <div class="stat-number" data-target="5">5+</div>
+                        <div class="stat-label">Programming Languages</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="stat-number" data-target="4">4</div>
+                        <div class="stat-label">State Management Patterns</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="stat-number">EEE & Dip.</div>
+                        <div class="stat-label">Engineering Background</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="scroll-indicator-wrap">
+                    <div class="mouse-scroll-box" title="Scroll Down">
+                        <div class="mouse-scroll-dot"></div>
+                    </div>
+                </div>
+
+                <div class="section-header text-center">
+                    <span class="subheading"><i class="fa-solid fa-user"></i> Professional Overview</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="header-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="card-icon-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Mobile Developer Journey</h3>
+                        </div>
+                        <p>
+                            I am a passionate **Flutter Developer** based in Dhaka, Bangladesh, dedicated to engineering seamless, reactive, and responsive mobile experiences. With a strong background in Electrical & Electronic Engineering (EEE) and Electronics, I bring logical precision, problem-solving depth, and architectural rigor to software development.
+                        </p>
+                        <p>
+                            My expertise covers the full mobile lifecycle—from crafting pixel-perfect UI screens and state management architectures (Bloc & Cubit, Riverpod, Provider, GetX) to backend REST API integrations and Firebase database management.
+                        </p>
+
+                        <div class="key-traits">
+                            <div class="trait-item"><i class="fa-solid fa-check"></i> Clean Code Standards</div>
+                            <div class="trait-item"><i class="fa-solid fa-check"></i> Scalable State Architecture</div>
+                            <div class="trait-item"><i class="fa-solid fa-check"></i> REST & Dio Integration</div>
+                            <div class="trait-item"><i class="fa-solid fa-check"></i> App Store Deployment</div>
+                        </div>
+                    </div>
+
+                    <div class="about-details-column">
+                        <div class="detail-box glass-card">
+                            <h3><i class="fa-solid fa-address-card"></i> Quick Contact Info</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-title"><i class="fa-solid fa-user-tag"></i> Name:</span>
+                                    <span class="info-value">Md. Meskatul Islam</span>
+                                </li>
+                                <li>
+                                    <span class="info-title"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                                    <span class="info-value">Dhaka, Bangladesh</span>
+                                </li>
+                                <li>
+                                    <span class="info-title"><i class="fa-solid fa-phone"></i> Phone:</span>
+                                    <a href="tel:+8801739707628" class="info-value link-text">+880 1739 707628</a>
+                                </li>
+                                <li>
+                                    <span class="info-title"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                    <a href="mailto:meskatul628@gmail.com" class="info-value link-text">meskatul628@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span class="info-title"><i class="fa-solid fa-language"></i> Languages:</span>
+                                    <span class="info-value">Bangla (Fluent), English (Intermediate)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-box glass-card">
+                            <h3><i class="fa-solid fa-graduation-cap"></i> Education Snapshot</h3>
+                            <div class="edu-snapshot">
+                                <div class="edu-item">
+                                    <div class="edu-degree">B.Sc. in Electrical & Electronic Engineering</div>
+                                    <div class="edu-meta">Dhaka International University (2026) | CGPA: 3.14 / 4.00</div>
+                                </div>
+                                <div class="edu-item">
+                                    <div class="edu-degree">Diploma in Electronics Engineering</div>
+                                    <div class="edu-meta">Jessore Polytechnic Institute (2021) | CGPA: 3.20 / 4.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading"><i class="fa-solid fa-wand-magic-sparkles"></i> Technical Stack</span>
+                    <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                    <p class="section-subtitle">Comprehensive toolkit utilized to build high-performance mobile applications</p>
+                    <div class="header-divider"></div>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-filter-container">
+                    <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Skills</button>
+                    <button class="filter-btn" data-filter="mobile"><i class="fa-brands fa-flutter"></i> Flutter & Mobile</button>
+                    <button class="filter-btn" data-filter="state"><i class="fa-solid fa-sitemap"></i> State Management</button>
+                    <button class="filter-btn" data-filter="languages"><i class="fa-solid fa-code"></i> Languages</button>
+                    <button class="filter-btn" data-filter="backend"><i class="fa-solid fa-database"></i> Backend & Storage</button>
+                </div>
+
+                <div class="skills-grid-container" id="skills-grid-container">
+                    <!-- Category Group 1: Mobile & Frameworks -->
+                    <div class="skill-category-group" data-category="mobile">
+                        <div class="category-group-header">
+                            <div class="category-bar-indicator indicator-mobile"></div>
+                            <h3 class="category-group-title">Mobile & Frameworks</h3>
+                            <span class="category-count-badge">4</span>
+                        </div>
+                        <div class="skills-logo-grid">
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="tech-logo-img">
+                                <span class="tech-logo-name">Flutter</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" class="tech-logo-img">
+                                <span class="tech-logo-name">Dart</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" class="tech-logo-img">
+                                <span class="tech-logo-name">Android</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="iOS" class="tech-logo-img" style="filter: invert(1);">
+                                <span class="tech-logo-name">iOS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Group 2: State Management -->
+                    <div class="skill-category-group" data-category="state">
+                        <div class="category-group-header">
+                            <div class="category-bar-indicator indicator-state"></div>
+                            <h3 class="category-group-title">State Management & Architecture</h3>
+                            <span class="category-count-badge">4</span>
+                        </div>
+                        <div class="skills-logo-grid">
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #2563EB;"><i class="fa-solid fa-cubes"></i></div>
+                                <span class="tech-logo-name">Bloc & Cubit</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #38BDF8;"><i class="fa-solid fa-water"></i></div>
+                                <span class="tech-logo-name">Riverpod</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #0284C7;"><i class="fa-solid fa-layer-group"></i></div>
+                                <span class="tech-logo-name">Provider</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #0EA5E9;"><i class="fa-solid fa-bolt"></i></div>
+                                <span class="tech-logo-name">GetX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Group 3: Backend & Database -->
+                    <div class="skill-category-group" data-category="backend">
+                        <div class="category-group-header">
+                            <div class="category-bar-indicator indicator-backend"></div>
+                            <h3 class="category-group-title">Backend & Database</h3>
+                            <span class="category-count-badge">5</span>
+                        </div>
+                        <div class="skills-logo-grid">
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="tech-logo-img">
+                                <span class="tech-logo-name">Firebase</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #38BDF8;"><i class="fa-solid fa-network-wired"></i></div>
+                                <span class="tech-logo-name">REST API & Dio</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Firestore" class="tech-logo-img">
+                                <span class="tech-logo-name">Firestore</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <div class="tech-logo-icon" style="color: #F59E0B;"><i class="fa-solid fa-database"></i></div>
+                                <span class="tech-logo-name">Hive NoSQL</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" class="tech-logo-img">
+                                <span class="tech-logo-name">SQLite & SharedPref</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Group 4: Languages & Tools -->
+                    <div class="skill-category-group" data-category="languages">
+                        <div class="category-group-header">
+                            <div class="category-bar-indicator indicator-languages"></div>
+                            <h3 class="category-group-title">Languages & Tools</h3>
+                            <span class="category-count-badge">6</span>
+                        </div>
+                        <div class="skills-logo-grid">
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-logo-img">
+                                <span class="tech-logo-name">Java</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-logo-img">
+                                <span class="tech-logo-name">Python</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-logo-img">
+                                <span class="tech-logo-name">C++</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="tech-logo-img">
+                                <span class="tech-logo-name">C</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-logo-img">
+                                <span class="tech-logo-name">Git</span>
+                            </div>
+                            <div class="tech-logo-card">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="tech-logo-img" style="filter: invert(1);">
+                                <span class="tech-logo-name">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Portfolio</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world mobile applications deployed on official app stores</p>
+                    <div class="header-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Biblity -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner">
+                            <div class="app-icon-box">
+                                <i class="fa-solid fa-book-bible"></i>
+                            </div>
+                            <div class="store-badge-top">
+                                <span class="store-chip play-store"><i class="fa-brands fa-google-play"></i> Google Play</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Biblity App</h3>
+                                <span class="project-tag">Flutter • Firebase • AI</span>
+                            </div>
+
+                            <p class="project-description">
+                                A comprehensive spiritual companion mobile application featuring Bible reading modules, audio Bible playback, daily prayers, journal logging, AI-assisted chat support, and push notifications.
+                            </p>
+
+                            <div class="feature-bullets">
+                                <div><i class="fa-solid fa-circle-dot"></i> Audio Bible & Interactive Journaling</div>
+                                <div><i class="fa-solid fa-circle-dot"></i> AI Chat Support & Smart Appointment Reminders</div>
+                                <div><i class="fa-solid fa-circle-dot"></i> Firebase Auth & Push Notifications</div>
+                            </div>
+
+                            <div class="tech-stack-chips">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>Firebase</span>
+                                <span>Audio Player</span>
+                                <span>REST API</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://play.google.com/store/apps/details?id=com.biblity.appity" target="_blank" rel="noopener noreferrer" class="btn btn-store google-play">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <div>
+                                        <span class="btn-sub">GET IT ON</span>
+                                        <span class="btn-main">Google Play</span>
+                                    </div>
+                                </a>
+                                <button class="btn btn-outline btn-details-modal" data-project="biblity">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: My CV Connect -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner project-screenshots-banner">
+                            <div class="screenshots-preview-row">
+                                <img src="assets/my cv connect/picture_1.webp" alt="My CV Connect App Screen 1" class="app-screenshot-thumb btn-details-modal" data-project="cvconnect">
+                                <img src="assets/my cv connect/picture_2.webp.webp" alt="My CV Connect App Screen 2" class="app-screenshot-thumb btn-details-modal" data-project="cvconnect">
+                                <img src="assets/my cv connect/picture_3.webp.webp" alt="My CV Connect App Screen 3" class="app-screenshot-thumb btn-details-modal" data-project="cvconnect">
+                                <img src="assets/my cv connect/picture_4.webp" alt="My CV Connect App Screen 4" class="app-screenshot-thumb btn-details-modal" data-project="cvconnect">
+                            </div>
+                            <div class="store-badge-top" style="display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end;">
+                                <span class="store-chip play-store"><i class="fa-brands fa-google-play"></i> Google Play</span>
+                                <span class="store-chip app-store"><i class="fa-brands fa-apple"></i> App Store</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">My CV Connect</h3>
+                                <span class="project-tag">Flutter • Job Tech • AI</span>
+                            </div>
+
+                            <p class="project-description">
+                                A smart mobile recruitment & profile building platform enabling job seekers to create professional CVs, receive AI job matching recommendations, apply with one tap, track applications, and chat directly.
+                            </p>
+
+                            <div class="feature-bullets">
+                                <div><i class="fa-solid fa-circle-dot"></i> Smart Resume Builder & Profile Creation</div>
+                                <div><i class="fa-solid fa-circle-dot"></i> Intelligent Job Matching & One-Tap Application</div>
+                                <div><i class="fa-solid fa-circle-dot"></i> In-App Direct Chat & AI Career Support</div>
+                            </div>
+
+                            <div class="tech-stack-chips">
+                                <span>Flutter</span>
+                                <span>Android & iOS</span>
+                                <span>GetX / State</span>
+                                <span>Realtime Chat</span>
+                                <span>APIs</span>
+                            </div>
+
+                            <div class="project-actions" style="flex-wrap: wrap;">
+                                <a href="https://play.google.com/store/apps/details?id=com.carlovan.cvconnectai" target="_blank" rel="noopener noreferrer" class="btn btn-store google-play">
+                                    <i class="fa-brands fa-google-play"></i>
+                                    <div>
+                                        <span class="btn-sub">GET IT ON</span>
+                                        <span class="btn-main">Google Play</span>
+                                    </div>
+                                </a>
+                                <a href="https://apps.apple.com/us/app/my-cv-connect/id6757781151" target="_blank" rel="noopener noreferrer" class="btn btn-store apple-store">
+                                    <i class="fa-brands fa-apple"></i>
+                                    <div>
+                                        <span class="btn-sub">Download on</span>
+                                        <span class="btn-main">App Store</span>
+                                    </div>
+                                </a>
+                                <button class="btn btn-outline btn-details-modal" data-project="cvconnect">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timeline -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading"><i class="fa-solid fa-timeline"></i> Career & Education</span>
+                    <h2 class="section-title">Work Experience & <span class="gradient-text">Education</span></h2>
+                    <div class="header-divider"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Experience Timeline Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-col-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+
+                        <div class="timeline-container">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-date">July 2025 – Present</div>
+                                <h4 class="timeline-role">Junior Flutter Developer</h4>
+                                <div class="timeline-company"><i class="fa-solid fa-building"></i> SM Technology • Banarasi, Dhaka</div>
+                                <ul class="timeline-details">
+                                    <li>Architected and developed cross-platform mobile applications using Flutter and Dart.</li>
+                                    <li>Integrated complex REST APIs and robust Firebase Authentication workflows.</li>
+                                    <li>Constructed reusable UI components and responsive adaptive layouts for diverse screen ratios.</li>
+                                    <li>Collaborated seamlessly with UI/UX design teams and backend engineers.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-date">May 2022 – November 2023</div>
+                                <h4 class="timeline-role">Junior Instructor (Electronics Dept)</h4>
+                                <div class="timeline-company"><i class="fa-solid fa-school"></i> National Polytechnic Institute • Farmgate, Dhaka</div>
+                                <ul class="timeline-details">
+                                    <li>Delivered lectures and practical lab instructions on electronic circuit principles and microcontrollers.</li>
+                                    <li>Guided students through hardware-software interfacing logic and problem solving.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-col-title"><i class="fa-solid fa-graduation-cap"></i> Academic Credentials</h3>
+
+                        <div class="timeline-container">
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-marker edu-marker"></div>
+                                <div class="timeline-date">Graduation Year: 2026</div>
+                                <h4 class="timeline-role">B.Sc. in Electrical & Electronic Engineering (EEE)</h4>
+                                <div class="timeline-company"><i class="fa-solid fa-university"></i> Dhaka International University</div>
+                                <div class="cgpa-badge">CGPA: 3.14 / 4.00</div>
+                                <p class="timeline-desc">Specialized in embedded systems, digital logic design, signal analysis, and computational mathematics.</p>
+                            </div>
+
+                            <div class="timeline-item glass-card">
+                                <div class="timeline-marker edu-marker"></div>
+                                <div class="timeline-date">Completed: 2021</div>
+                                <h4 class="timeline-role">Diploma in Engineering (Electronics)</h4>
+                                <div class="timeline-company"><i class="fa-solid fa-building-columns"></i> Jessore Polytechnic Institute</div>
+                                <div class="cgpa-badge">CGPA: 3.20 / 4.00</div>
+                                <p class="timeline-desc">Foundational studies in electronics engineering, microprocessors, and hardware programming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="subheading"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+                    <p class="section-subtitle">Interested in collaborating or hiring for a Flutter mobile role? Drop a message!</p>
+                    <div class="header-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <a href="mailto:meskatul628@gmail.com" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Email Me</span>
+                                <span class="contact-value">meskatul628@gmail.com</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                        </a>
+
+                        <a href="tel:+8801739707628" class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Call / WhatsApp</span>
+                                <span class="contact-value">+880 1739 707628</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                        </a>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-card-content">
+                                <span class="contact-label">Current Location</span>
+                                <span class="contact-value">Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Opportunity">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Hello Meskatul, I'd like to discuss a mobile app project..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-glow">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div id="modal-body-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="brand-logo">
+                    <span class="logo-icon"><i class="fa-brands fa-flutter"></i></span>
+                    <span class="logo-text">Meskatul<span class="highlight">.dev</span></span>
+                </a>
+                <p class="footer-tagline">Crafting scalable, high-performance mobile apps with Flutter & Dart.</p>
+            </div>
+
+            <div class="footer-center">
+                <p>&copy; <span id="current-year">2026</span> Md. Meskatul Islam. All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="social-links-bar">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:meskatul628@gmail.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
