@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Meskatul Islam - Flutter Developer Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0F172A;
+            --secondary: #334155;
+            --accent: #0284C7;
+            --border: #CBD5E1;
+            --bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--primary);
+            background-color: #F1F5F9;
+            line-height: 1.5;
+            font-size: 13.5px;
+            padding: 2rem 1rem;
+        }
+
+        .resume-page {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 40px 48px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 6px;
+        }
+
+        /* Top Action Bar (hidden when printing) */
+        .action-bar {
+            max-width: 850px;
+            margin: 0 auto 1.5rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: #0284C7;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s;
+        }
+
+        .btn-action:hover {
+            background: #0369A1;
+        }
+
+        .btn-back {
+            background: #475569;
+        }
+        .btn-back:hover {
+            background: #334155;
+        }
+
+        /* Resume Content */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 14px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .job-title {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--accent);
+            margin: 3px 0 8px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 12.5px;
+            color: var(--secondary);
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 13.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: var(--secondary);
+            text-align: justify;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+
+        .skills-list strong {
+            color: var(--primary);
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 14px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .item-subtitle {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .item-date {
+            font-size: 12px;
+            font-weight: 500;
+            color: #64748B;
+        }
+
+        .item-bullets {
+            list-style-type: disc;
+            padding-left: 18px;
+            margin-top: 4px;
+        }
+
+        .item-bullets li {
+            margin-bottom: 3px;
+            color: var(--secondary);
+            font-size: 12.8px;
+        }
+
+        .links-row {
+            margin-top: 2px;
+            font-size: 12px;
+        }
+
+        .links-row a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .links-row a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                background: #FFFFFF;
+                padding: 0;
+            }
+            .action-bar {
+                display: none !important;
+            }
+            .resume-page {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none !important;
+                color: #0F172A !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="action-bar">
+        <a href="index.html" class="btn-action btn-back">← Back to Portfolio</a>
+        <button onclick="window.print()" class="btn-action">🖨️ Print / Save as PDF</button>
+    </div>
+
+    <div class="resume-page">
+        <header>
+            <h1>Md. Meskatul Islam</h1>
+            <div class="job-title">Flutter Developer | Mobile Application Engineer (Android & iOS)</div>
+            <div class="contact-info">
+                <span>📍 Dhaka, Bangladesh</span>
+                <span>📞 <a href="tel:+8801739707628">+880 1739 707628</a></span>
+                <span>✉️ <a href="mailto:meskatul628@gmail.com">meskatul628@gmail.com</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/md-meskatul-islam-617873212/" target="_blank">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/Meskatul628" target="_blank">GitHub</a></span>
+                <span>💬 <a href="https://wa.me/8801739707628" target="_blank">WhatsApp</a></span>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Results-driven <strong>Flutter Developer</strong> with <strong>1+ years of production experience</strong> engineering high-performance, responsive cross-platform mobile applications for Android & iOS. Proven track record of publishing multiple live applications to the <strong>Google Play Store</strong> and <strong>Apple App Store</strong>. Proficient in <strong>Clean Architecture</strong>, scalable state management (<strong>Bloc/Cubit, Riverpod, Provider, GetX</strong>), offline caching (<strong>Hive, SQLite</strong>), and complex hardware/sensor integrations including <strong>NFC tag scanning, QR/Barcode readers, and Google Maps API</strong>. Experienced in deploying secure payment workflows (<strong>Stripe, bKash PGW, In-App Purchases</strong>). Strong engineering foundation with a background in Electrical & Electronic Engineering (EEE).
+            </p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Core Mobile:</strong> Flutter, Dart, Android (Java/Kotlin), iOS (Swift/Xcode), Material Design 3, Cupertino.</li>
+                <li><strong>State Management & Architecture:</strong> BLoC, Cubit, Riverpod, Provider, GetX, Clean Architecture, Repository Pattern, SOLID Principles, MVVM.</li>
+                <li><strong>Hardware & Device Integrations:</strong> NFC Tag Reading/Writing, QR Code & Barcode Scanning, Google Maps Platform & Geolocation, Camera, Push Notifications (FCM).</li>
+                <li><strong>Payment Gateways & Monetization:</strong> Stripe Payment Gateway, bKash PGW, Google Play Billing & Apple StoreKit (In-App Purchases / IAP).</li>
+                <li><strong>Backend, APIs & Storage:</strong> RESTful APIs, Dio HTTP Client, Firebase (Auth, Firestore, Cloud Messaging, Crashlytics), Hive NoSQL, SQLite (sqflite), SharedPreferences.</li>
+                <li><strong>Programming Languages:</strong> Dart, JavaScript, Java, Python, C++, C, SQL.</li>
+                <li><strong>Developer Tools:</strong> Git, GitHub, Postman, Android Studio, VS Code, Xcode, App Store Connect, Google Play Console.</li>
+            </ul>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Flutter Developer</span> — <span class="item-subtitle">SM Technology</span>
+                    </div>
+                    <span class="item-date">July 2025 – Present | Dhaka, Bangladesh</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Architected, developed, and maintained production-grade cross-platform mobile applications using Flutter and Dart for Android and iOS clients.</li>
+                    <li>Implemented clean, modular architectural patterns using <strong>Bloc and Cubit</strong>, achieving separation of concerns, high testability, and reusable UI components.</li>
+                    <li>Integrated advanced device hardware capabilities including <strong>NFC tag scanning</strong> and <strong>camera-based QR/barcode inspection</strong>, reducing manual facility audit time by <strong>40%</strong>.</li>
+                    <li>Integrated end-to-end payment processing pipelines including <strong>Stripe</strong> and <strong>bKash Payment Gateway (PGW)</strong> for frictionless in-app transactions.</li>
+                    <li>Managed the full deployment and release lifecycle, publishing builds to <strong>Google Play Console</strong> and <strong>Apple App Store Connect</strong>, maintaining a <strong>99.5%+ crash-free session rate</strong>.</li>
+                    <li>Integrated RESTful APIs with Dio, implementing interceptors, token refresh mechanisms, offline caching with Hive, and robust error handling.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Junior Instructor (Electronics Dept)</span> — <span class="item-subtitle">National Polytechnic Institute</span>
+                    </div>
+                    <span class="item-date">May 2022 – November 2023 | Dhaka, Bangladesh</span>
+                </div>
+                <ul class="item-bullets">
+                    <li>Delivered lectures and practical lab instructions on electronic circuit design, microcontrollers, and digital logic principles.</li>
+                    <li>Mentored students in algorithmic problem solving and hardware-software interfacing concepts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Live Store Applications -->
+        <section>
+            <h2>Published Mobile Applications (App Store & Google Play)</h2>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Warehouse Safety Manager App</span>
+                        <span class="item-subtitle"> — Industrial Audit & Safety Platform</span>
+                    </div>
+                    <span class="item-date">Android, iOS & macOS</span>
+                </div>
+                <div class="links-row">
+                    <a href="https://play.google.com/store/apps/details?id=com.warehousesafety.manager" target="_blank">Google Play Store ↗</a>
+                    <a href="https://apps.apple.com/us/app/warehouse-safety-manager-app/id6796285782" target="_blank">Apple App Store ↗</a>
+                </div>
+                <ul class="item-bullets">
+                    <li><strong>Tech Stack:</strong> Flutter, Dart, Google Maps API, REST API, SQLite, Firebase.</li>
+                    <li>Engineered a full-featured industrial compliance and risk auditing mobile app enabling real-time safety checklist completion and photo evidence uploads.</li>
+                    <li>Built dynamic PDF inspection report generation and integrated Google Maps for warehouse facility location tagging.</li>
+                    <li>Implemented local offline database storage with SQLite to support uninterrupted audits in zero-connectivity warehouse zones with automated cloud syncing.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Pallet Rack Inspection Manager</span>
+                        <span class="item-subtitle"> — Facility Compliance & Mapping App</span>
+                    </div>
+                    <span class="item-date">Android & iOS</span>
+                </div>
+                <div class="links-row">
+                    <a href="https://play.google.com/store/apps/details?id=com.app.dti" target="_blank">Google Play Store ↗</a>
+                    <a href="https://apps.apple.com/us/app/pallet-rack-inspection-manager/id6796648736" target="_blank">Apple App Store ↗</a>
+                </div>
+                <ul class="item-bullets">
+                    <li><strong>Tech Stack:</strong> Flutter, Dart, NFC Tag Scanning, QR / Barcode Reader, REST API.</li>
+                    <li>Implemented native <strong>NFC tag scanning</strong> and QR code reading to instantly look up rack inspection history and compliance logs on-site.</li>
+                    <li>Designed coordinate-based rack layout mapping and standardized checklist workflows complying with safety regulations.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Yepp Ads</span>
+                        <span class="item-subtitle"> — Deals, Coupons & Vendor Marketing App</span>
+                    </div>
+                    <span class="item-date">Android & iOS</span>
+                </div>
+                <div class="links-row">
+                    <a href="https://play.google.com/store/apps/details?id=agency.beuptech.yepp" target="_blank">Google Play Store ↗</a>
+                    <a href="https://apps.apple.com/us/app/yepp-ads/id6760607013" target="_blank">Apple App Store ↗</a>
+                </div>
+                <ul class="item-bullets">
+                    <li><strong>Tech Stack:</strong> Flutter, Dart, REST APIs, Dio, Push Notifications (FCM).</li>
+                    <li>Developed a high-traffic deals, coupon discovery, and merchant marketing mobile platform connecting shoppers with exclusive promotions.</li>
+                    <li>Implemented real-time coupon code feeds, search filters, and store discovery with lazy loading and optimized image caching.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Biblity App</span>
+                        <span class="item-subtitle"> — Reader & Lifestyle Mobile App</span>
+                    </div>
+                    <span class="item-date">Google Play Store</span>
+                </div>
+                <div class="links-row">
+                    <a href="https://play.google.com/store/apps/details?id=com.biblity.appity" target="_blank">Google Play Store ↗</a>
+                </div>
+                <ul class="item-bullets">
+                    <li><strong>Tech Stack:</strong> Flutter, Dart, Audio Player, Local Notifications, SharedPreferences.</li>
+                    <li>Published a user-friendly lifestyle reader app with audio streaming, bookmarking, and custom typography settings.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="experience-item" style="margin-bottom: 8px;">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Bachelor of Science (B.Sc.) in Electrical & Electronic Engineering (EEE)</span>
+                    </div>
+                    <span class="item-date">Graduation: 2026</span>
+                </div>
+                <div style="font-size: 13px; color: var(--secondary);">
+                    Dhaka International University | <strong>CGPA: 3.12 / 4.00</strong>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Diploma in Engineering (Electronics)</span>
+                    </div>
+                    <span class="item-date">Graduated: 2021</span>
+                </div>
+                <div style="font-size: 13px; color: var(--secondary);">
+                    Jessore Polytechnic Institute | <strong>CGPA: 3.20 / 4.00</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2>Languages</h2>
+            <p style="font-size: 13px;">
+                <strong>English:</strong> Professional Working Proficiency &nbsp;|&nbsp; <strong>Bengali:</strong> Native
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>

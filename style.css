@@ -806,6 +806,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    flex-wrap: wrap;
 }
 
 .social-label {
@@ -1249,6 +1250,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .indicator-mobile { background: #0284C7; box-shadow: 0 0 10px rgba(2, 132, 199, 0.5); }
 .indicator-state { background: #3B82F6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+.indicator-payment { background: #E11D48; box-shadow: 0 0 10px rgba(225, 29, 72, 0.5); }
 .indicator-backend { background: #10B981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
 .indicator-languages { background: #6366F1; box-shadow: 0 0 10px rgba(99, 102, 241, 0.5); }
 
@@ -1339,8 +1341,8 @@ h1, h2, h3, h4, h5, h6 {
    -------------------------------------------------------------------------- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
 .project-card {
@@ -1381,12 +1383,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: 100%;
-    padding-top: 1.2rem;
+    padding: 0;
 }
 
 .app-screenshot-thumb {
     height: 165px;
+    max-width: 22%;
     width: auto;
+    flex-shrink: 1;
     border-radius: 10px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
     border: 1px solid var(--border-highlight);
@@ -1483,6 +1487,12 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(96, 165, 250, 0.4);
 }
 
+.mac-chip {
+    background: rgba(168, 85, 247, 0.2);
+    color: #C084FC;
+    border: 1px solid rgba(192, 132, 252, 0.4);
+}
+
 .project-content {
     padding: 2rem;
     flex-grow: 1;
@@ -1493,8 +1503,17 @@ h1, h2, h3, h4, h5, h6 {
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
     margin-bottom: 0.8rem;
+}
+
+.store-chips-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-title {
@@ -1888,6 +1907,17 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 0.8rem;
     animation: slideInRight 0.3s forwards;
+    max-width: 400px;
+}
+
+.toast-success {
+    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 0 20px rgba(52, 211, 153, 0.2);
+}
+
+.toast-error {
+    border-color: rgba(248, 113, 113, 0.4);
+    box-shadow: 0 0 20px rgba(248, 113, 113, 0.2);
 }
 
 @keyframes slideInRight {
