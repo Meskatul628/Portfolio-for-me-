@@ -1530,6 +1530,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-tag {
+    display: block;
+    margin-top: 0.25rem;
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--flutter-cyan);

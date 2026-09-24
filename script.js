@@ -167,9 +167,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Equipment maintenance auditing for forklifts, heavy machinery, and facility tools.",
                 "Visual photo logging & hazard issue tagging directly into inspection audit logs.",
                 "Automated professional PDF audit reports generated instantly for OSHA compliance.",
+                "In-App Purchases (IAP) integration for unlocking premium facility inspection tiers.",
                 "Offline inspection mode with automatic background cloud sync upon reconnection."
             ],
-            techStack: ["Flutter", "Dart", "Android & iOS", "macOS", "REST API"],
+            techStack: ["Flutter", "Dart", "BLoC State Management", "In-App Purchases", "Android & iOS", "macOS", "REST API"],
             description: "Warehouse Safety Manager is a multiplatform enterprise application available across Google Play, Apple App Store, and macOS. Built for safety auditors, facility managers, and inspectors, it simplifies safety inspection workflows with digital checklist tools, structural rack audits, and instant compliance reporting."
         },
         palletrack: {
@@ -191,9 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Interactive rack and position mapping to visually organize warehouse coordinate layouts and device positions.",
                 "Comprehensive contractor and inspector profile management with full audit history tracking.",
                 "Detailed digital reporting with hazard photo evidence uploads and digital inspector signatures.",
+                "In-App Purchases (IAP) integration for unlocking advanced inspection features and audits.",
                 "Robust cloud synchronization for reliable on-site verification and multi-facility safety management."
             ],
-            techStack: ["Flutter", "Dart", "Android & iOS", "NFC Scanning", "QR / Barcode", "REST API"],
+            techStack: ["Flutter", "Dart", "Android & iOS", "NFC Scanning", "QR / Barcode", "REST API", "GetX State Management", "In-App Purchases"],
             description: "Pallet Rack Inspection Manager is an advanced industrial inspection application available on Google Play and Apple App Store. Built for equipment inspectors, contractors, and warehouse managers, it streamlines facility audits through native NFC tag reading, QR code scanning, coordinate-based rack mapping, and real-time checklist reporting."
         },
         yeppads: {

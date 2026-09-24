@@ -44,16 +44,18 @@ Results-driven **Flutter Developer** with **1+ years of production experience** 
 #### **1. Warehouse Safety Manager App**
 *Platforms: Google Play Store, Apple App Store & macOS*
 *Links: [Google Play](https://play.google.com/store/apps/details?id=com.warehousesafety.manager) | [Apple App Store](https://apps.apple.com/us/app/warehouse-safety-manager-app/id6796285782)*
-* **Tech Stack:** Flutter, Dart, Google Maps API, REST API, SQLite, Firebase.
+* **Tech Stack:** Flutter, Dart, BLoC State Management, In-App Purchases (IAP), Google Maps API, REST API, SQLite, Firebase.
 * Engineered a full-featured industrial compliance and risk auditing mobile app enabling real-time safety checklist completion and photo evidence uploads.
+* Integrated In-App Purchases (Google Play Billing & Apple StoreKit) for premium subscription tiers and multi-facility inspection unlock.
 * Built dynamic PDF inspection report generation and integrated Google Maps for warehouse facility location tagging.
 * Implemented local offline database storage with SQLite to support uninterrupted audits in zero-connectivity warehouse zones with automated cloud syncing.
 
 #### **2. Pallet Rack Inspection Manager**
 *Platforms: Google Play Store & Apple App Store*
 *Links: [Google Play](https://play.google.com/store/apps/details?id=com.app.dti) | [Apple App Store](https://apps.apple.com/us/app/pallet-rack-inspection-manager/id6796648736)*
-* **Tech Stack:** Flutter, Dart, NFC Tag Scanning, QR / Barcode Reader, REST API.
+* **Tech Stack:** Flutter, Dart, GetX State Management, In-App Purchases (IAP), NFC Tag Scanning, QR / Barcode Reader, REST API.
 * Implemented native **NFC tag scanning** and QR code reading to instantly look up rack inspection history and compliance logs on-site.
+* Integrated In-App Purchases (Google Play Billing & Apple StoreKit) for unlockable premium safety checklist templates and inspection credits.
 * Designed coordinate-based rack layout mapping and standardized checklist workflows complying with safety regulations.
 
 #### **3. Yepp Ads**
