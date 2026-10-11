@@ -6,16 +6,16 @@ Dhaka, Bangladesh | +880 1739 707628 | +880 1626 518818 | meskatul628@gmail.com
 ---
 
 ### PROFESSIONAL SUMMARY
-Results-driven **Flutter Developer** with **1+ years of production experience** engineering high-performance, responsive cross-platform mobile applications for Android & iOS. Proven track record of publishing multiple live applications to the **Google Play Store** and **Apple App Store**. Proficient in **Clean Architecture**, scalable state management (**Bloc/Cubit, Riverpod, Provider, GetX**), offline caching (**Hive, SQLite**), and complex hardware/sensor integrations including **NFC tag scanning, QR/Barcode readers, and Google Maps API**. Experienced in deploying secure payment workflows (**Stripe, bKash PGW, In-App Purchases**). Strong engineering foundation with a background in Electrical & Electronic Engineering (EEE).
+Results-driven **Flutter Developer** with **2+ years of production experience** engineering high-performance, responsive cross-platform mobile applications for Android & iOS. Proven track record of publishing multiple live applications to the **Google Play Store** and **Apple App Store**. Proficient in **Clean Architecture**, scalable state management (**Bloc/Cubit, Riverpod, Provider, GetX**), offline caching (**Hive, SQLite**), and complex hardware/sensor integrations including **QR/Barcode readers, and Google Maps API**. Experienced in deploying secure payment workflows (**Stripe, bKash PGW, In-App Purchases**). Strong engineering foundation with a background in Electrical & Electronic Engineering (EEE).
 
 ---
 
 ### TECHNICAL SKILLS
 * **Core Mobile Technologies:** Flutter, Dart, Android (Java/Kotlin interoperability), iOS (Swift/Xcode configuration), Material Design 3, Cupertino.
 * **State Management & Architecture:** BLoC, Cubit, Riverpod, Provider, GetX, Clean Architecture, Repository Pattern, SOLID Principles, MVVM.
-* **Hardware & Device Integrations:** NFC Tag Reading/Writing, QR Code & Barcode Scanning, Google Maps Platform & Geolocation, Camera, Local & Push Notifications (FCM).
+* **Hardware & Device Integrations:** QR Code & Barcode Scanning, Google Maps Platform & Geolocation, Camera, Local & Push Notifications (FCM).
 * **Payment Gateways & Monetization:** Stripe Payment Gateway, bKash PGW, Google Play Billing & Apple StoreKit (In-App Purchases / IAP).
-* **Backend, APIs & Storage:** RESTful APIs, Dio HTTP Client, Firebase (Auth, Firestore, Cloud Messaging, Crashlytics), Hive NoSQL, SQLite (sqflite), SharedPreferences.
+* **Backend, APIs & Storage:** RESTful APIs, Dio HTTP Client, Supabase, Firebase (Auth, Firestore, Cloud Messaging, Crashlytics), Hive NoSQL, SQLite (sqflite), SharedPreferences.
 * **Programming Languages:** Dart, JavaScript, Java, Python, C++, C, SQL.
 * **Tools & DevOps:** Git, GitHub, Postman, Android Studio, VS Code, Xcode, App Store Connect, Google Play Console.
 
@@ -25,14 +25,16 @@ Results-driven **Flutter Developer** with **1+ years of production experience** 
 
 #### **Flutter Developer** — *SM Technology* | Dhaka, Bangladesh
 *July 2025 – Present*
-* Architected, developed, and maintained production-grade cross-platform mobile applications using Flutter and Dart for Android and iOS clients.
-* Implemented clean, modular architectural patterns using **Bloc and Cubit**, achieving separation of concerns, high testability, and reusable UI components.
-* Integrated advanced device hardware capabilities including **NFC tag scanning** and **camera-based QR/barcode inspection**, reducing manual facility audit time by **40%**.
-* Integrated end-to-end payment processing pipelines including **Stripe** and **bKash Payment Gateway (PGW)** for frictionless in-app transactions.
-* Managed the full deployment and release lifecycle, publishing builds to **Google Play Console** and **Apple App Store Connect**, maintaining a **99.5%+ crash-free session rate**.
-* Integrated RESTful APIs with Dio, implementing interceptors, token refresh mechanisms, offline caching with Hive, and robust error handling.
+* Architected and deployed production-grade Flutter/Dart applications for iOS and Android following Clean Architecture.
+* Implemented modular state management (GetX, BLoC, Cubit) and integrated REST APIs via Dio with offline Hive caching.
+* Integrated Stripe payment pipelines and In-App Purchases, and managed release lifecycles on App Store Connect and Play Console.
 
-#### **Junior Instructor (Electronics Dept)** — *National Polytechnic Institute* | Dhaka, Bangladesh
+#### **Flutter Developer** — *Innovative Solutions for Innovations Inc* | Maryland, USA (Remote)
+*January 2025 – June 2025*
+* Developed and maintained cross-platform mobile applications for Android and iOS using Flutter and Dart.
+* Built responsive UI screens, integrated REST APIs, and managed application state while collaborating with the development team.
+
+#### **Junior Instructor (Electronics)** — *National Polytechnic Institute* | Dhaka, Bangladesh
 *May 2022 – November 2023*
 * Delivered lectures and practical lab instructions on electronic circuit design, microcontrollers, and digital logic principles.
 * Mentored students in algorithmic problem solving and hardware-software interfacing concepts.
